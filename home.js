@@ -28,32 +28,32 @@ document.addEventListener('DOMContentLoaded', function() {
       {
         name: "Premium Butter Zaw",
         price: "250",
-        img: "images/butter-aroma-zaw.jpg",
-        imgFallback: "images/butter-aroma-zaw.jpg",
+        img: "butter-aroma-zaw.jpg",
+        imgFallback: "butter-aroma-zaw.jpg",
         waMsg: "Hello! I want to buy Butter Zaw.%0A%0AHow many drey do you want to buy? Please tell me the quantity.%0A%0APrice: Nu. 250 per drey",
         buttonText: "Premium Butter Zaw - Nu.250/drey 📱"
       },
       {
         name: "Khamtey Rice",
         price: "130",
-        img: "images/khamtey.png",
-        imgFallback: "images/khamtey.png",
+        img: "khamtey.png",
+        imgFallback: "khamtey.png",
         waMsg: "Hello! I want to buy Khamtey Rice.%0A%0AHow many kg do you want to buy? Please tell me the quantity.%0A%0APrice: Nu. 130 per kg",
         buttonText: "Khamtey Rice - Nu.130/kg 📱"
       },
       {
         name: "Boyay",
         price: "150",
-        img: "images/boyay.png",
-        imgFallback: "images/boyay.png",
+        img: "boyay.png",
+        imgFallback: "boyay.png",
         waMsg: "Hello! I want to buy Boyay.%0A%0AHow many drey do you want to buy? Please tell me the quantity.%0A%0APrice: Nu. 150 per drey",
         buttonText: "Boyay - Nu.150/drey 📱"
       },
       {
         name: "Raw Zaw",
         price: "150",
-        img: "images/raw-zaw.png",
-        imgFallback: "images/raw-zaw.png",
+        img: "raw-zaw.png",
+        imgFallback: "raw-zaw.png",
         waMsg: "Hello! I want to order Raw Zaw.%0A%0AHow many drey do you want to buy? Please tell me the quantity.%0A%0APrice: Nu. 150 per drey",
         buttonText: "Raw Zaw - Nu.150/drey 📱"
       }
