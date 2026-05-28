@@ -1,0 +1,120 @@
+/* Location page styles - NO FOOTER (handled by 1.css) */
+
+.location-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.location-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.location-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e2f;
+  margin-bottom: 0.5rem;
+}
+
+.location-header p {
+  color: #5e6b5c;
+  font-size: 1.1rem;
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.map-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.location-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h3 {
+  color: #2c3e2f;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e7b874;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.info-card p {
+  color: #4a5b46;
+  line-height: 1.6;
+}
+
+/* Contact links inside info-card */
+.info-card a {
+  transition: opacity 0.2s ease;
+}
+
+.info-card a:hover {
+  opacity: 0.8;
+  text-decoration: underline !important;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .location-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .location-header h1 {
+    font-size: 2rem;
+  }
+  
+  .location-info {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .location-container {
+    padding: 1rem;
+  }
+  
+  .location-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .location-header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .location-header p {
+    font-size: 0.9rem;
+  }
+  
+  .info-card {
+    padding: 1rem;
+  }
+  
+  .info-card h3 {
+    font-size: 1rem;
+  }
+}
