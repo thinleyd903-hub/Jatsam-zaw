@@ -1,0 +1,191 @@
+/* Symbolic page styles - Complete Updated Version */
+
+.back-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #2c3e2f;
+  color: #f9e0a8;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e7b874;
+  color: #1e2a1f;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #4a5b46;
+}
+
+.content h1 {
+  color: #2c3e2f;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+/* Hero section styles */
+.hero-section {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e7b874;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section .subhead {
+  font-size: 1.1rem;
+  color: #e7b874;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Symbolic quote box */
+.symbolic-quote {
+  background: #fdf8ed;
+  border-left: 5px solid #e7b874;
+  padding: 1.2rem 1.8rem;
+  border-radius: 24px;
+  margin: 1.8rem 0;
+  font-size: 1.1rem;
+  color: #3a4a35;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Value grid styles */
+.value-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.value-card {
+  background: linear-gradient(135deg, #fef9ef 0%, #fcf3e4 100%);
+  padding: 1.2rem 1.5rem;
+  border-radius: 28px;
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+  border: 1px solid #e2cfaa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.value-card .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.value-card .title {
+  font-weight: bold;
+  color: #2c3e2f;
+  font-size: 1.1rem;
+}
+
+/* Final symbolic message */
+.final-symbolic {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 500;
+  background: #2c3e2f;
+  color: #f9e0a8;
+  padding: 1.5rem;
+  border-radius: 48px;
+  margin: 2rem 0 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 720px) {
+  .content {
+    padding: 15px;
+  }
+  .content h1 {
+    font-size: 1.6rem;
+  }
+  .back-button {
+    margin: 15px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+  .value-card {
+    min-width: 100px;
+    padding: 1rem;
+  }
+  .value-card .icon {
+    font-size: 1.5rem;
+  }
+  .symbolic-quote {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+  }
+  .final-symbolic {
+    font-size: 1rem;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 12px;
+  }
+  .content h1 {
+    font-size: 1.3rem;
+  }
+  .back-button {
+    margin: 10px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+  .value-grid {
+    gap: 0.8rem;
+  }
+  .value-card {
+    min-width: 80px;
+    padding: 0.8rem;
+  }
+  .value-card .icon {
+    font-size: 1.3rem;
+  }
+  .value-card .title {
+    font-size: 0.9rem;
+  }
+  .symbolic-quote {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  .final-symbolic {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
