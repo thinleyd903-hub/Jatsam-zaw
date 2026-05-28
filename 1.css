@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fefaf5;
+  font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  touch-action: pan-y pinch-zoom;
+}
+
+main {
+  flex: 1;
+}
+
+/* ========== HEADER & NAVIGATION ONLY ========== */
+header {
+  background: #2c3e2f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  padding: 0.75rem 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 40px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  color: #f5f0e6;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 248, 225, 0.2);
+  color: #ffecb3;
+}
+
+nav ul li a.active {
+  background-color: #e7b874;
+  color: #1e2a1f;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo as a CIRCLE */
+.logo {
+  display: inline-block;
+}
+
+.logo a,
+.logo a.active,
+.logo a:hover,
+.logo a:focus,
+.logo a:visited {
+  background: rgba(231, 184, 116, 0.15) !important;
+  padding: 0.5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+  width: 52px;
+  height: 52px;
+  transition: all 0.2s ease;
+}
+
+.logo a:hover {
+  background: rgba(231, 184, 116, 0.35) !important;
+  transform: scale(1.05);
+}
+
+.logo img {
+  height: 36px;
+  width: 36px;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+/* ========== FOOTER ONLY ========== */
+footer {
+  background: #2c3e2f;
+  color: #d4c4a8;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  border-top: 1px solid #e7b874;
+}
+
+.footer-link {
+  color: #e7b874;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 4px;
+  border-radius: 20px;
+}
+
+.footer-link:hover {
+  color: #ffecb3;
+  text-decoration: underline;
+  background: rgba(231, 184, 116, 0.15);
+}
+
+.footer-link.whatsapp-link {
+  color: #25D366;
+}
+
+.footer-link.whatsapp-link:hover {
+  color: #20b859;
+  background: rgba(37, 211, 102, 0.15);
+}
+
+.footer-link.telegram-link {
+  color: #26A5E4;
+}
+
+.footer-link.telegram-link:hover {
+  color: #1e8bc4;
+  background: rgba(38, 165, 228, 0.15);
+}
+
+.footer-separator {
+  color: #e7b874;
+  font-weight: 600;
+  margin: 0 6px;
+}
+
+.footer-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 12px;
+  margin-bottom: 8px;
+}
+
+/* ========== RESPONSIVE (NAV & FOOTER ONLY) ========== */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: space-evenly;
+    gap: 0.3rem;
+  }
+  nav ul li a {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.85rem;
+  }
+  .logo a { width: 44px !important; height: 44px !important; padding: 0.4rem !important; }
+  .logo img { height: 30px; width: 30px; }
+  .mobile { display: block; }
+  .desktop { display: none; }
+  
+  .footer-contact-row { flex-direction: row; flex-wrap: wrap; }
+  .footer-link { font-size: 0.85rem; }
+}
+
+@media (max-width: 480px) {
+  nav { padding: 0 1rem; }
+  nav ul { gap: 0.2rem; }
+  nav ul li a { padding: 0.4rem 0.5rem; font-size: 0.8rem; }
+  .logo a { width: 38px !important; height: 38px !important; padding: 0.3rem !important; }
+  .logo img { height: 26px; width: 26px; }
+  
+  footer { padding: 1rem; font-size: 0.75rem; }
+  .footer-contact-row { flex-direction: column; gap: 6px; }
+  .footer-separator { display: none; }
+  .footer-link { font-size: 0.8rem; }
+}
